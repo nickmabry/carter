@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ItemsControllerControllerTest < ActionDispatch::IntegrationTest
+class ItemsControllerTest < ActionDispatch::IntegrationTest
    test 'a posted item returns 201' do
      post item_url, { external_id: '12345' }, format: :json
      assert_response :created
