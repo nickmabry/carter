@@ -5,7 +5,6 @@ class ItemsController < ApplicationController
 
     @cart_id = ItemAcceptor.new(modified_params).persist!
 
-
     cookies[:cart_id] = @cart_id
     render status: :created, formats: :json
   end
